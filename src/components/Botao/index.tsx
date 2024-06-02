@@ -1,10 +1,10 @@
-import './style.scss';
+import style from './botao.module.scss';
 import React from 'react';
 
 class Botao extends React.Component {
     render(){
         return(
-            <button className='botao'>
+            <button className={style.botao}>
                 Botão
             </button>
         );

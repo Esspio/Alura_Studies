@@ -1,10 +1,10 @@
-import './style.scss';
+import style from './app.module.scss';
 import Formulario from '../components/Formulario';
 import Lista from '../components/Lista';
 
 function App() {
   return (
-    <div className="AppStyle">
+    <div className={style.AppStyle}>
       <Formulario/>
       <Lista/>
     </div>
