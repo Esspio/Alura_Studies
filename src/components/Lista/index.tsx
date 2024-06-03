@@ -8,7 +8,7 @@ function Lista({tarefas}: {tarefas: tarefaInterface[]}){
             <h2>Estudos do Dia</h2>
             <ul>
                 {tarefas.map((tarefa, index) => (
-                    <Item key={index} tarefa={tarefa.nome} tempo={tarefa.tempo}/>
+                    <Item key={index} tarefa={tarefa.tarefa} tempo={tarefa.tempo}/>
                 ))}
             </ul>
         </aside>
