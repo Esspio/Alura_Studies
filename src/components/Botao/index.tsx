@@ -1,7 +1,21 @@
 import style from './botao.module.scss';
 import React from 'react';
 
-class Botao extends React.Component<{texto: string, type?: "button" | "submit" | "reset" | undefined, onClick?: () => void}> {
+interface Props{
+    texto: string,
+    type?: "button" | "submit" | "reset" | undefined,
+    onClick?: () => void
+}
+
+function Botao({texto, type, onClick} : Props) {
+    return (
+        <button className={style.botao} onClick={onClick}>
+            texto
+        </button>
+    )
+}
+
+/* class Botao1 extends React.Component<{texto: string, type?: "button" | "submit" | "reset" | undefined, onClick?: () => void}> {
     render(){
         const {type = "button", onClick} = this.props;
         return(
@@ -10,6 +24,6 @@ class Botao extends React.Component<{texto: string, type?: "button" | "submit" |
             </button>
         );
     }
-}
+} */
 
 export default Botao;
